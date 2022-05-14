@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <title>Counting App</title>
+  </head>
+  <body>
+    <header>
+      <h1>Count 'Em Up</h1>
+    </header>
+    <main>
+      <h2>Name of the Game is Simple</h2>
+      <ol>
+        <li>Solve Equation</li>
+        <li>Click Corresponding Button</li>
+      </ol>
+      <h3>Careful not to go over, reset if needed</h3>
+      <h3>Do NS last to unlock <em>Bonus</em></h3>
+      <div class="probs">
+        <p>2b-3 = b+9</p>
+        <p>(6w)*3 = 14w+12</p>
+        <p>15r/3 = 25+(2*25)</p>
+        <p>3(n-18) = 27</p>
+        <p><strong>Bonus:</strong></p>
+        <p>6(3s+4) = 528-6s</p>
+      </div>
+      <div class="txt">
+        <p id="b-txt">Brown:</p>
+        <p id="w-txt">White:</p>
+        <p id="r-txt">Radioactive:</p>
+        <p id="n-txt">NS:</p>
+        <p class="reset" onclick="reset()">Reset</p>
+      </div>
+      <div class="btns">
+        <button onclick="upB()">b</button>
+        <button onclick="upW()">w</button>
+        <button onclick="upR()">r</button>
+        <button onclick="upN()">n</button>
+      </div>
+        <p id="lvl"></p>
+        <p id="secret"></p>
+        <span id="span"></span>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
